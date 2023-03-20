@@ -1,0 +1,75 @@
+@font-face {
+    font-family: gentlesignature;
+    src: url(./assets/fonts/gantelline\ 2.otf);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(255, 255, 255);
+
+}
+.header p{
+    font-family: gentlesignature;
+    font-size:200%;
+    
+}
+
+.barra{
+    background-color: rgb(0, 0, 0);
+    height: 25px;
+    width: auto;
+}
+nav img .logo{
+    align-items: center;
+}
+nav{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: gold;
+    height: 150px;
+    width: 100%;
+}
+.enlace{
+    padding: 20px 50px;
+}
+.titulo{
+    position: absolute;
+    right: 52%;
+    top: 0%;
+}
+
+.logo{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+   right: 50%;
+    top: 20%;
+}
+nav ul{
+    float: right ;
+    margin-right: 20px;
+
+}
+nav ul li{
+    display: inline-block;
+    line-height: 8px;
+    margin: 0 5px;
+}
+nav ul li a button{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    
+}
+li a button:hover{
+    background: crimson;
+    transition: .5s;
+    cursor: pointer;
+}
