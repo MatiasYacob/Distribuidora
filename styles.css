@@ -3,8 +3,9 @@
     margin: 0;
     text-decoration: none;
     list-style: none;
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
+
 .barra{
     background: #000000;
     height: 30px;
@@ -26,11 +27,12 @@ main{
     transform: scale(1.1);
 }
 .barralogo{
+    border: 1px solid red;
     display: flex;
-    justify-content: center;
-    align-items:center;
+    flex-direction:column ;
+    align-items: center;
     background: #aeff00;
-    height: 120px;
+    height: 150px;
     width: 100%;
 }
 nav{
@@ -42,7 +44,13 @@ nav{
     position: absolute;
     padding: 20px 50px;
 }
+h1{
+    font-family: 'Gill Sans';
+    border: 1px solid red;
+    width: 200px;
+}
 .logo{
+    border: 1px solid red;
     height:150px;
     border-radius: 50%;
     
