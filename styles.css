@@ -1,75 +1,146 @@
-@font-face {
-    font-family: gentlesignature;
-    src: url(./assets/fonts/gantelline\ 2.otf);
-}
-
 *{
-    box-sizing: border-box;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
 }
-body{
-    background-color: rgb(255, 255, 255);
+.barra{
+    background: #000000;
+    height: 30px;
+    width: 100%;
 
 }
-.header p{
-    font-family: gentlesignature;
-    font-size:200%;
+main{
+    height: 800px;
+}
+
+.registro{
+    float: right;
+    margin: 0 10px;
+    color: #ffffff;
     
 }
-
-.barra{
-    background-color: rgb(0, 0, 0);
-    height: 25px;
-    width: auto;
+.registro:hover{
+    color: aqua;
+    transform: scale(1.1);
 }
-nav img .logo{
-    align-items: center;
+.barralogo{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background: #aeff00;
+    height: 120px;
+    width: 100%;
 }
 nav{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: gold;
-    height: 150px;
+    background: #000000;
+    height: 80px;
     width: 100%;
 }
 .enlace{
+    position: absolute;
     padding: 20px 50px;
 }
-.titulo{
-    position: absolute;
-    right: 52%;
-    top: 0%;
-}
-
 .logo{
-    position: absolute;
-    height: 200px;
-    width: 200px;
-   right: 50%;
-    top: 20%;
+    height:150px;
+    border-radius: 50%;
+    
+    
+    transition: .5s;
+    background-color: none;
+}
+.logo:hover{
+    transform: scale(1.2);
 }
 nav ul{
-    float: right ;
+    
     margin-right: 20px;
-
 }
 nav ul li{
     display: inline-block;
-    line-height: 8px;
+    line-height: 80px;
     margin: 0 5px;
 }
-nav ul li a button{
-    color: rgb(0, 0, 0);
+nav ul li a{
+    color: #fff;
     font-size: 18px;
     padding: 7px 13px;
     border-radius: 3px;
+    text-transform: uppercase;
+}
+li a:hover{
+    background: #900011;
+    transition: .5s;
+    
     
 }
-li a button:hover{
-    background: crimson;
-    transition: .5s;
+
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
     cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+section{
+    background: url(fondo.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+        float: left;
+        margin: 0 15px;
+    }
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    .barralogo{
+        height: 80px;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #ccf502;
+        top: 190px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        color: #000090;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: red;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
 }
