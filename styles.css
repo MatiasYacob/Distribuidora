@@ -1,86 +1,191 @@
-*{
+* {
     padding: 0;
     margin: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: content-box;
 }
-    @font-face {
+
+@font-face {
     font-family: 'titulo';
-    src: url('./assets/fonts/gantelline\ 2.otf') }
-    @import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@500&display=swap');
-.barra{
+    src: url('./assets/fonts/gantelline\ 2.otf')
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@500&display=swap');
+
+/* uso de grids */
+.grid-container {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+    width: 300px;
+
+
+}
+
+.gridindex {
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    
+}
+.gridindex2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    background-color:none;
+    height: 200px;
+    
+}
+.grid-item {
+    border-radius: 10%;
+    background-color: none;
+    border: 5px solid #333;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    transition: 1s;
+}
+.grid-item2 {
+    border-radius: 10%;
+    background-color: none;
+    border: none;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    transition: 1s;
+}
+
+.grid-item:hover {
+    transform: scale(1.1);
+    background-color: #F6FB04;
+}
+
+.grid-item2 {
+    background-color: none;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+.grid-item2:hover {
+    transform: scale(1.1);
+    
+}
+.iconocontacto {
+    height: 100px;
+}
+
+.imagenindex {
+    border-radius: 10%;
+    height: 150px;
+    width: 150px;
+}
+
+
+main {
+    height: 150vh;
+    margin: auto;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.index {
+    height: 150vh;
+    margin: auto;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: none;
+    display: flex;
+
+
+}
+
+.barra {
     background: #000000;
     height: 30px;
     width: 100%;
 
 }
-main{
-    display:flex ;
-    height: 100vh;
-    width: 100%;
-}
-.caja-registro{
+
+.caja-registro {
     margin-top: 10px;
     padding: 15px;
     border: black solid;
     height: auto;
 }
-.registro{
+
+.registro {
     float: right;
     margin: 0 10px;
     color: #ffffff;
-    
+
 }
-.registro:hover{
+
+.registro:hover {
     color: aqua;
     transform: scale(1.1);
 }
-.barralogo{
-    
+
+.barralogo {
+
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items: center;
     background: #F6FB04;
     height: 150px;
     width: 100%;
 }
-nav{
+
+nav {
     background: #000000;
     height: 80px;
     width: 100%;
 }
 
-h1{
+h1 {
     font-weight: bolder;
     font-family: 'titulo';
     width: 120px;
     font-size: 30px;
-    margin-right:70px ;
+    margin-right: 70px;
     margin-top: -10px;
 }
-.logo{
-    
-    height:140px;
+
+.logo {
+
+    height: 140px;
     border-radius: 50%;
     margin-top: -40px;
     transition: 2s;
     background-color: none;
 }
-.logo:hover{
+
+.logo:hover {
     transform: scale(1.2);
 }
-nav ul{
-    
+
+nav ul {
+
     margin-right: 20px;
 }
-nav ul li{
+
+nav ul li {
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
-    margin-top:5px;
+    margin-top: 5px;
 }
-nav ul li a{
+
+nav ul li a {
     font-family: gemunu libre;
     color: #fff;
     font-size: 18px;
@@ -89,15 +194,16 @@ nav ul li a{
     text-transform: uppercase;
     text-decoration: none;
 }
-ul li a:hover{
+
+ul li a:hover {
     background: #ffffff;
     color: #000000;
     transition: 1s;
     transform: scale(1.3);
-    
+
 }
 
-.checkbtn{
+.checkbtn {
     font-size: 30px;
     color: #fff;
     float: right;
@@ -106,130 +212,214 @@ ul li a:hover{
     cursor: pointer;
     display: none;
 }
-#check{
+
+#check {
     display: none;
 }
-section{
-    display:flex;
+
+section {
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items:center;
+    align-items: center;
     background-size: cover;
     background-position: center center;
     height: 200px;
     padding: 10px;
-    
+
 }
-main{
-    height: 120vh;
-    margin: auto;
-    border: 1px solid red;
-    background-color:none;
+
+/* body{
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
+    justify-content: space-around;
+
+} */
 
 
 footer {
-        background-color: #000000;
-        color: #313131;
-        text-align: center;
-        padding: 20px;
-        font-size:xx-small;
-        width: 100%;
- }
-         /*generado por IA inicio*/
-         /*le pedi que usara grids*/
- .social-media {
+    background-color: #000000;
+    color: #313131;
+    text-align: center;
+    padding: 20px;
+    font-size: xx-small;
+    width: 100%;
+}
+
+/*generado por IA inicio*/
+/*le pedi que usara grids*/
+.social-media {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
     justify-content: center;
     background-color: #000090;
-  }
-  
-  .social-media a {
+}
+
+.social-media a {
     display: block;
-  }
-  
-  .social-media img {
+}
+
+.social-media img {
     height: 50px;
     width: 50px;
-  }
-         /*generado por IA fin*/
-@media (max-width: 952px){
-    .enlace{
-        padding-left: 20px;
-    }
-    nav ul li a{
+}
+
+/*generado por IA fin*/
+/* inicio de stilo referido al "quiero ser cliente" */
+.flexcliente{
+    display: flex;
+    width: 100%;
+    background-color: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.requisitos{
+    padding: 5px;
+    font-size: large;
+    font-family: gemunu libre;
+    text-align: center;
+    border: 5px black solid;
+    height:260px;
+    width: 50%;
+    margin: 10px;
+    
+}
+.firma{
+    font-size: 25px;
+    float: right;
+    margin-top: 60px;
+
+}
+h2{
+    color: red;
+}
+@media (max-width: 952px) {
+    
+
+    nav ul li a {
         font-size: 16px;
     }
 }
 
-@media (max-width: 858px){
-    main{
+@media (max-width: 600px) {
+    main {
         margin-top: 150px;
         
     }
-  
-    .checkbtn{
+    
+    .requisitos{
+        padding: 5px;
+        font-size: large;
+        font-family: gemunu libre;
+        text-align: center;
+        border: 5px black solid;
+        height:450px;
+        width: 50%;
+        margin: 10px;
+        
+    }
+ 
+    .grid-item {
+        border-radius: 10%;
+        background-color: none;
+        border: 5px solid #333;
+        padding: 20px;
+        text-align: center;
+        font-size: 24px;
+        transition: 1s;
+        height: 180px;
+        
+    }
+    .gridindex2 {
+        display: grid;
+        grid-template-columns: auto ;
+        grid-template-columns: repeat(1fr, 3);
+        gap: 0px;
+        padding: 0;
+        margin-top: 160px;
+        background-color:none;
+    }
+    .grid-item2 {
+        border-radius: 10%;
+        background-color: none;
+        padding: 0px;
+        text-align: center;
+        font-size: 15px;
+        transition: 1s;
+        height: 120px;
+        
+    }
+.imagenindex{
+height: 80px;
+width: 75%;
+}
+    .checkbtn {
         display: block;
         float: left;
         margin: 0 15px;
     }
+
     header {
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
         z-index: 1000;
-      }
-      
-    .barralogo{
+    }
+
+    .barralogo {
         display: flex;
         flex-direction: column;
-        height: 80px;
-        justify-content:center;
+        height: 40px;
+        justify-content: center;
         padding: 0;
     }
-    .logo{
+
+    .logo {
         scale: 0.8;
         margin-top: 100px;
     }
-    h1{
+
+    h1 {
         scale: 0.8;
         margin-left: 50px;
-        
+
     }
-    ul{
-        
-        position:fixed ;
+
+    ul {
+
+        position: fixed;
         width: 100%;
         height: 100vh;
         background: #ccf502;
-        top: 190px;
+        top: 150px;
         left: -100%;
         text-align: center;
         transition: all .5s;
     }
-    nav ul li{
+
+    nav ul li {
         display: block;
-        margin: 50px 0;
+        margin: 5px;
         line-height: 30px;
     }
-    nav ul li a{
+
+    nav ul li a {
         font-size: 20px;
-        color: #000090;
+        color: #000000;
     }
-    li a:hover, li a.active{
+
+    li a:hover,
+    li a.active {
         background: none;
         color: red;
     }
-    #check:checked ~ ul{
-        
-        left:0;
-      
+
+    #check:checked~ul {
+
+        left: 0;
+
     }
 
 }

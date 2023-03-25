@@ -8,6 +8,10 @@
     <title> Distribuidora Del Sol</title>
     <link rel="stylesheet" href="../styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -15,51 +19,81 @@
         <div class="barra"><a class="registro" href="#">Registro</a></div>
         <div class="barralogo">
             <h1>Distribuidora</h1>
-            <a href="#" class="enlace">
-            <img src="../assets/img/logotipo-distribuidora-del-sol.png" alt="logopagina" class="logo">
-        </a>
+            <a href="../index.html" class="enlace">
+                <img src="../assets/img/logotipo-distribuidora-del-sol.png" alt="logopagina" class="logo">
+            </a>
         </div>
         <nav>
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
                 <i class="fas fa-bars"></i>
             </label>
-        
+
             <ul>
-                
-                <li><a href="#">Empresa</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Quiero Ser Cliente</a></li>
-                <li><a href="#">Contacto</a></li>
+
+                <li><a href="./empresa.html">Empresa</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./quierosercliente.html">Quiero Ser Cliente</a></li>
+                <li><a href="./catalogo.html">Catalogo</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <hr>
-        <ul>
-            <li><label for="email"><b>Ingresar Email</b></label><br>
-                <input type="text" placeholder="Email" name="email">
-            </li>
-            <li><label for="pwd"><b>Contraseña</b></label><br>
-                <input type="password" placeholder="Contraseña" name="pwd">
-            </li>
-            <li><label for="confirm"><b>Confirmar Contraseña</b></label><br>
-                <input type="password" placeholder="Confirmar Contraseña" name="confirm">
-            </li>
-        </ul>
-        <hr>
-        <!--Aca termina el ingreso de datos para el registro-->
-        <p>Al Crear Una Cuenta Usted Acepta Nuestros <a href="#">Terminos & Condiciones</a>.</p>
-        <button type="submit" class="registerbtn"><strong>Registrar</strong></button>
+        <div class="flexcliente">
+            <div class="requisitos"><p><h2>Atencion!</h2> Debido a una cuestion de logistica para ser cliente y poder acceder a nuestro catalogo web debera completar el siguiente formulario y esperar que se le de el alta en la pagina en las proximas 48hs habiles a partir del momento del envio.  <h1 class="firma">Distribuidora Del Sol</h1> </p> </div>
+            <section class="caja-registro grid-item3" >
+
+                <div class="container mt-5">
+                    <form class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label for="rubro" class="form-label">Rubro:</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <form class="needs-validation" novalidate>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nombre de la Empresa:</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                        <div class="mb-3">
+                            <label for="direccion" class="form-label">Direccion:</label>
+                            <input type="direccion" class="form-control" id="email" required>
+                        </div>
+                </div>
+                <div class="mb-3">
+                    <label for="codigopostal" class="form-label">Codigo Postal:</label>
+                    <input type="Cuit" class="form-control"  required>
+                </div>
+                <div class="mb-3">
+                    <label for="numerotelefono" class="form-label">Numero de Telefono:</label>
+                    <input type="Cuit" class="form-control"  required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Cuit:</label>
+                    <input type="cuit" class="form-control"  required>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-primary">Enviar Formulario</button>
+                    <a href="../index.html" class="btn btn-primary">Cancelar</a>
+                    
+                    
+                
+                </div>
         </div>
-        <div class="container signin">
-
-
-            <p>Ya estas registrado? <a href="#">iniciar sesion</a>.</p>
         
+        
+        </form>
+        </div>
+        <!-- Bootstrap JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/js/bootstrap.min.js"></script>
+        </section>
+        </div>
     </main>
     <footer>
-
+        Disclaimer: Termly Inc is not a lawyer or a law firm and does not engage in the practice of law or provide
+        legal advice or legal representation. All information, software, services, and comments provided on the site
+        are for informational and self-help purposes only and are not intended to be a substitute for professional
+        legal advice. Use of this site is subject to our Terms of Use.
     </footer>
 </body>
 
