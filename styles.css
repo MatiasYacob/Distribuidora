@@ -13,6 +13,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@500&display=swap');
 
+.contenedor-mensaje{
+    
+    margin: 15px;
+    padding: 5px;
+    text-align: left;
+    width: 70%;
+    height: auto;
+    border: #000000 solid 5px;
+}
+.descripcion{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 /* uso de grids */
 .grid-container {
 
@@ -174,10 +186,15 @@ h1 {
 }
 
 nav ul {
-
+   
     margin-right: 20px;
 }
-
+.mapa{
+    border: none 5px solid;
+    margin: auto auto;
+    width: 100%;
+    
+}
 nav ul li {
     display: inline-block;
     line-height: 80px;
